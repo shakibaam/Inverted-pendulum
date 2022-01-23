@@ -1,1 +1,1 @@
-# Inverted-pendulum
+# Inverted-pendulum with fuzzy expert system
