@@ -14,6 +14,25 @@ The variables of this problem include:
 
 The output of the problem is the force (F) applied to the cart in the x-axis direction.
 
+## Implementation Steps
+
+To implement the fuzzy control system, follow these steps:
+
+1. **Fuzzification**: 
+   - Fuzzify the input variables by mapping them to fuzzy sets.
+   - Transform the crisp inputs (angle and angular velocity) into linguistic terms using membership functions.
+
+2. **Inference**:
+   - Use the predefined rules written in the `fcl.simple/controller` file.
+   - Perform appropriate inference based on the fuzzified inputs to determine the fuzzy output.
+   - The rules involve terms like Pv (Proportional Velocity) and Pa (Proportional Angle) to guide the inference process.
+
+3. **Defuzzification**:
+   - Convert the fuzzy output into a crisp value representing the absolute force.
+   - Calculate the absolute force value based on the provided descriptions and guidelines.
+   - Consider this value as the output of the `decide` function.
+
+
 ## Getting Started
 
 To run this project, ensure that Python 2.7 is installed on your system. If not, you can download Python 2.7 from the org.python website.
